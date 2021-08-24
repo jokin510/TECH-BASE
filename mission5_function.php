@@ -11,7 +11,6 @@ function dbConnect() {
         ];
     
     try {
-        
         $dbh = new PDO($dsn, $user, $password, $opt);
         return $dbh;
     } catch(PDOException $e) {
@@ -34,9 +33,9 @@ function createTable() {
         
     $res = $dbh->query($sql);
     if($res == true){
-        echo 'Connection successful (Table is available)';
+        echo 'Connection successful.';
     }else{
-        echo 'not ok';
+        echo 'Connection failed.';
     }
     
     $dbh = null;
