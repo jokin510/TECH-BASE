@@ -31,7 +31,8 @@ require_once('mission5_conduct.php');
     <input type="password" name="password3" placeholder="Password">
     <input type="submit" name="edit_btn" value="編集"></p>
   </form>
-</body>
+  </body>
+</html>
 <?php
 
 // 表示
